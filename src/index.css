@@ -1,0 +1,98 @@
+:root {
+    --headerHeight: 80px;
+    --footerHeight: 80px;
+    --sideMenuWidth: 250px;
+    --myFont: 'Courier New', Courier, monospace; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.header{
+    background-color: black;
+    height: var(--headerHeight);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer{
+    background-color: black;
+    height: var(--footerHeight);
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background-color: grey;
+    height: calc(100% - var(--footerHeight) - var(--headerHeight));
+    width: 100%;
+}
+
+.sideMenu{
+    background-color: seagreen ;
+    width: var(--sideMenuWidth);
+    height: 100%;
+    float: left;
+}
+
+.content{
+    height: 100%;
+    background-color: aquamarine;
+    margin-left: var(--sideMenuWidth);
+    overflow-y: auto;
+
+}
+
+.headerLogo{
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.headerTitle{
+    margin-left: 4px;
+    font-family: var(--myFont);
+}
+
+.sideMenuButton{
+    padding: 12px;
+    font-size: 28px;
+    font-family: var(--myFont);
+}
+
+.selectedMenuButton{
+    background-color: aquamarine;
+}
+
+.username{
+    color: white;
+    margin-right: 12px;
+    font-size: 18px;
+    font-family: var(--myFont);
+}
+
+.albums{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.tile{
+    width: 200px;
+    height: 200px;
+    margin: 8px;
+    background-color: seagreen;
+    border-radius: 8px;
+}
